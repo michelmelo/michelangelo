@@ -1,0 +1,33 @@
+{
+    "name": "michelmelo/michelangelo",
+    "description": "Laravel Image Management and Optimization Package",
+    "keywords": ["laravel", "image"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michel Melo",
+            "email": "eu@michelmelo.pt",
+            "homepage": "https://michelmelo.pt"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Michelmelo\\MichelAngelo\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "^5.0|^6.0|^7.0",
+        "illuminate/database": "^5.0|^6.0|^7.0",
+        "intervention/image": "^2.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Michelmelo\\MichelAngelo\\ServiceProvider"
+            ],
+            "aliases": {
+                "MichelAngelo": "Michelmelo\\MichelAngelo\\Facade"
+            }
+        }
+    }
+}
