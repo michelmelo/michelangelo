@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Michelmelo\\MichelAngelo\\": "src/"
+            "Michelmelo\\Michelangelo\\": "src/"
         }
     },
     "require": {
@@ -23,10 +23,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Michelmelo\\MichelAngelo\\ServiceProvider"
+                "Michelmelo\\Michelangelo\\ServiceProvider"
             ],
             "aliases": {
-                "MichelAngelo": "Michelmelo\\MichelAngelo\\Facade"
+                "Michelangelo": "Michelmelo\\Michelangelo\\Facade"
             }
         }
     }
