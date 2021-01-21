@@ -1,3 +1,5 @@
+![Michelangelo](https://banners.beyondco.de/Michelangelo.png?theme=light&packageManager=composer+require&packageName=michelmelo%2Fmichelangelo&pattern=architect&style=style_1&description=+Laravel+Image+Management+and+Optimization+Package&md=1&showWatermark=0&fontSize=100px&images=camera)
+
 # Michelangelo
 
 Michelangelo is a Laravel Image Management and Optimization Package. Define image dimensions and options, store uploaded image in multiple dimensions with or without a watermark and retrieve optimized images on your website when needed.
