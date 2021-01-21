@@ -17,13 +17,13 @@ Your page will load faster because it will have less MB to download because the 
 
 From the command line:
 
-```
+```bash
 composer require michelmelo/michelangelo
 ```
 
 Publish the config file `michelangelo.php` to your `/config` directory:
 
-```
+```bash
 php artisan vendor:publish --provider="Michelmelo\Michelangelo\ServiceProvider" --tag=config
 ```
 
@@ -39,7 +39,7 @@ Before continuing be sure to open the `/config/michelangelo.php` file and update
 
 After you have stored the user uploaded image in your storage `UploadedFile $image->store('images')` and you have retrieved the path to the image. Give that path (that you would usually store in the database) to michelangelo:
 
-```
+```php
 use Michelmelo\Michelangelo\Michelangelo;
 
 public function store(Request $request, Michelangelo $michelangelo)
@@ -61,7 +61,7 @@ public function store(Request $request, Michelangelo $michelangelo)
 
 When the user is going to replace the existing image with a new one, we have to first purge all records from storage and manifest file of the old image and then optimize the new image:
 
-```
+```php
 use Michelmelo\Michelangelo\Michelangelo;
 
 public function update(Request $request, Article $article, Michelangelo $michelangelo)
@@ -93,7 +93,7 @@ public function update(Request $request, Article $article, Michelangelo $michela
 
 When deleting a record which has optimized images, be sure to delete optimized image also to reduce unused files:
 
-```
+```php
 use Michelmelo\Michelangelo\Michelangelo;
 
 
@@ -119,7 +119,7 @@ public function destroy(Article $article, Michelangelo $michelangelo)
 
 From your view files do:
 
-```
+```blade
 <image src="{{ Michelangelo::get($article->image, 'news') }}" />
 ```
 This line will retrieve the optimized image URL.
