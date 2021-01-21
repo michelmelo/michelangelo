@@ -1,7 +1,7 @@
 {
     "name": "michelmelo/michelangelo",
     "description": "Laravel Image Management and Optimization Package",
-    "keywords": ["laravel", "image"],
+    "keywords": ["laravel", "image","image Optimization"],
     "license": "MIT",
     "authors": [
         {
